@@ -2,6 +2,10 @@
 Creates a zip file which contains all the files in a folder which can be used for aws lambda from windows. This is a modified version of the zipper provided by aws which also sets the file permissions to 777.
 
 # Usage:
+Run `go get -u github.com/rayhaanq/win-go-zipper`
+
+then execute the zipper from your GOBIN directory
+
 `win-go-zipper.exe -o <output-zip-file-name>.zip <folder-containing-zips>`
 
 # Example:
