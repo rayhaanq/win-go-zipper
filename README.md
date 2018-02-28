@@ -8,3 +8,5 @@ Creates a zip file which contains all the files in a folder which can be used fo
 `win-go-zipper.exe -o myservice.zip bin`
 
 To use with the serverless framework edit your serverless.yml and add the generated zip file to the packages artifact. Read more here https://serverless.com/framework/docs/providers/aws/guide/packaging/
+
+You can also create a bat file which builds all your binaries and then executes the zipper
