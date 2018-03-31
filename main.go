@@ -93,7 +93,7 @@ func compressFiles(fPaths []string, path string, outputZip string) error {
 		writer, err := zipWriter.CreateHeader(&zip.FileHeader{
 			CreatorVersion: 3 << 8,     // indicates Unix
 			ExternalAttrs:  0777 << 16, // -rwxrwxrwx file permissions
-			Name:           fp,
+			Name:           filepath.Base(fp),
 			Method:         zip.Deflate,
 		})
 
